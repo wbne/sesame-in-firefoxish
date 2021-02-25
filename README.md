@@ -63,17 +63,20 @@ Let’s break it down to a few components: The custom extension, testweb.html, C
 
 The custom extension
 
-	This extension basically checks to see if a window in Chrome has loaded. If it has then it’ll open Sesame. Pretty simple but it turns out that opening Chrome for the first time will not suffice. You need to load a page AFTER opening Chrome and so testweb.html was created.
+This extension basically checks to see if a window in Chrome has loaded. If it has then it’ll open Sesame. Pretty simple but it turns out that opening Chrome for the first time will not suffice. You need to load a page AFTER opening Chrome and so testweb.html was created.
 
 testweb.html
 
-	The purpose of this website is to only refresh once and then close itself. Normally browsers do not allow standard websites to close themselves BUT Open in Chrome somehow bypasses this and causes Chrome to believe that testweb.html is a popup which allows window.close()  to operate. To refresh once I looked up a solution on stack overflow so that’s pretty nice.
+The purpose of this website is to only refresh once and then close itself. Normally browsers do not allow standard websites to close themselves BUT Open in Chrome somehow bypasses this and causes Chrome to believe that testweb.html is a popup which allows window.close()  to operate. To refresh once I looked up a solution on stack overflow so that’s pretty nice.
 
 Chrome extension shenanigans
 
-	So one issue I thought of when trying to open Sesame is the file directory since the version updates. Luckily for me, Chrome actually uses a shortened URL that only uses the extension’s ID which is tied to the extension itself regardless of version. Since Sesame is an official extension, it’s ID should not change so I can use this directory to ALWAYS open Sesame. In addition, opening Sesame in a new popup window through the extension will automatically do so without messing with the settings.
+So one issue I thought of when trying to open Sesame is the file directory since the version updates. Luckily for me, Chrome actually uses a shortened URL that only uses the extension’s ID which is tied to the extension itself regardless of version. Since Sesame is an official extension, it’s ID should not change so I can use this directory to ALWAYS open Sesame. In addition, opening Sesame in a new popup window through the extension will automatically do so without messing with the settings.
 
 Open in Chrome
 
-	So this is the extension that makes all of this possible. This was developed by somebody else but what’s incredibly convenient is how the opened tab in Chrome is actually a pop-up window! This is most likely because the extension can only open a file in Chrome with the window.open() method or something similar resulting in the pop-up property required for this hack.
+So this is the extension that makes all of this possible. This was developed by somebody else but what’s incredibly convenient is how the opened tab in Chrome is actually a pop-up window! This is most likely because the extension can only open a file in Chrome with the window.open() method or something similar resulting in the pop-up property required for this hack.
 
+Some additional things I want to mention
+
+I might make a Sesame like extension which would be a glorified hyperlink but I would only do it if enough people actually use this (which I doubt).
