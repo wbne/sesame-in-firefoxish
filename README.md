@@ -77,6 +77,8 @@ Open in Chrome
 
 So this is the extension that makes all of this possible. This was developed by somebody else but what’s incredibly convenient is how the opened tab in Chrome is actually a pop-up window! This is most likely because the extension can only open a file in Chrome with the window.open() method or something similar resulting in the pop-up property required for this hack.
 
+UPDATE: It turns out Chrome is just stupid and allows window.close() so it doesn’t matter how Open in Chrome does it’s magic.
+
 Some additional things I want to mention
 
 I might make a Sesame like extension which would be a glorified hyperlink but I would only do it if enough people actually use this (which I doubt).
