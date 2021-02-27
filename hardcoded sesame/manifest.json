@@ -1,0 +1,37 @@
+{
+  "name": "sfirefoxesame",
+  "version": "0.01",
+  "description": "Digital dorm for students firefox edition kinda not really",
+  "permissions": [
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/logo_16.png",
+      "32": "images/logo_32.png",
+      "48": "images/logo_48.png",
+      "128": "images/logo_128.png"
+    },
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "images/logo_16.png",
+    "32": "images/logo_32.png",
+    "48": "images/logo_48.png",
+    "128": "images/logo_128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "Poppins-Regular.ttf"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "blessrng@pls.work"
+  }
+}
+}

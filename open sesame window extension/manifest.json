@@ -6,6 +6,6 @@
    "description": "adfssdfa",
    "manifest_version": 2,
    "name": "dreams",
-   "permissions": [ "idle", "*://*/*", "tabs", "notifications"],
+   "permissions": [ "idle", "<all_urls>", "tabs", "notifications", "webNavigation"],
    "version": "0.01"
 }

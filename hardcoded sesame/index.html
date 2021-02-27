@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <style>
+    @font-face {
+    font-family: fonty;
+    src:url("./Poppins-Regular.ttf");
+    }
+
+      body,
+      html {
+        overflow: hidden;
+        min-width: 400px;
+        min-height: 600px;
+        background: #faf5ef;
+        font-family: fonty;
+      }
+      a {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50vh;
+        color: white;
+        background-color: #93560c;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10rem;
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      #wrapper {
+        display:flex;
+        width: 100%;
+        height: 100%;
+      }
+      #nut {
+        width: 128px;
+        height: 128px;
+        background-image: url("./images/logo_128.png");
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 25vh;
+        position: absolute;
+      }
+}
+    </style>
+  </head>
+  <body>
+    <div id="nut"></div>
+    <div id="wrapper">
+      <a id="blob" href="">open this in chrome</a>
+    </div>
+  </body>
+  <script src="urlappender.js"></script>
+</html>
