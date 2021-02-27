@@ -79,6 +79,4 @@ So this is the extension that makes all of this possible. This was developed by 
 
 UPDATE: It turns out Chrome is just stupid and allows window.close() so it doesn’t matter how Open in Chrome does it’s magic.
 
-Some additional things I want to mention
-
-I might make a Sesame like extension which would be a glorified hyperlink but I would only do it if enough people actually use this (which I doubt).
+UPDATE 2: I created the webtest.html hyperlink extension using the Sesame theme (and their font (sorry) 👀). To use the extension just install it on Firefox and then in the extension's settings put in the webtest.html file directory.
